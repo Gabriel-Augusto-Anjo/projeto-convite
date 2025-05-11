@@ -37,12 +37,19 @@
     --font-family2: 'Baloo 2', sans-serif;
     --font-family3: "Open Sans", sans-serif;
 
-    --lg: 400 4rem/auto var(--font-family1);
+    --text-lg: 400 4rem var(--font-family1);
 
-    --hd-md: 700 2.8rem/auto var(--font-family2);
-    --hd-sm: 700 1.8rem/auto var(--font-family2);
+    --hd-md: 700 2.8rem var(--font-family2);
+    --hd-sm: 700 1.8rem var(--font-family2);
 
-    --bd-md: 600 1.6rem/auto var(--font-family3);
-    --bd-sm: 600 1.4rem/auto var(--font-family3);
-    --bd-xs: 600 1.2rem/auto var(--font-family3);
+    --bd-md: 600 1.6rem var(--font-family3);
+    --bd-sm: 600 1.4rem var(--font-family3);
+    --bd-xs: 600 1.2rem var(--font-family3);
 }
+
+body {
+    overflow: hidden;
+    background-color:black;
+}
+
+

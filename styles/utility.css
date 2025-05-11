@@ -1,0 +1,25 @@
+.text-lg {
+    font: var(--text-lg);
+    color: var(--pink);
+}
+
+.hd-md {
+    font: var(--hd-md);
+}
+
+.hd-sm {
+    font: var(--hd-sm);
+}
+
+.bd-md {
+    font: var(--bd-md);
+    color: var(--text-heading);
+}
+
+.bd-sm {
+    font: var(--bd-sm);
+}
+
+.bd-xs {
+    font: var(--bd-xs);
+}
