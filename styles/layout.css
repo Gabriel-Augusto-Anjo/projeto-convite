@@ -51,7 +51,7 @@ aside {
 main {
     justify-content: center;
     overflow: auto;
-    padding: 3rem;
+    padding: 7rem;
     position: relative;
     background-color: var(--shape-body);
     max-width: 82rem;

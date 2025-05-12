@@ -8,15 +8,21 @@ label + .radio-wrapper {
     border: 1px solid var(--input-stroke);
     display: grid;
     grid-auto-flow: column;
+    grid-template-columns: repeat(2, 1fr);
     align-items: flex-start;
     width: 27.2rem;
-    height: 4.8rem;
     margin-top: 5rem;
+    align-content: center;
 }
 
 .radio-inner {
+    height: 4rem;
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
     justify-items: center;
     position: relative;
+    justify-content: center;
     gap: 1rem;
     & input,
     & input:focus,
@@ -25,10 +31,28 @@ label + .radio-wrapper {
         position: absolute;
         inset: 0;
     }
+
+    label, svg {
+         transform: translateY(10px);
+    }
+
+    &:hover, &:has(:checked) {
+        justify-content: center;
+        border-radius: 0.4rem;
+        background-color: var(--shape-hover);
+        stroke: var(--brand-light);
+    }
 }
 
-.radio-inner:hover {
-    border-radius: 0.4rem;
-    background-color: var(--shape-hover);
-    stroke: var(--brand-light);
+#evento {
+    .error {
+        opacity: 0;
+    }
+
+    input[type="text"] {
+        &:has(:invalid) {
+            color: var(--red);
+            border: 1ps solid var(--red);
+        }
+    }
 }

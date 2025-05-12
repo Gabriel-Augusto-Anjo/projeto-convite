@@ -1,5 +1,4 @@
 input, textarea, select {
-    /* height: 4rem; */
     appearance: none;
     width: 100%;
     border-radius: 0.8rem;
@@ -34,5 +33,3 @@ select:focus {
     width: 56rem;
     height: 13.6rem;
 }
-
-
