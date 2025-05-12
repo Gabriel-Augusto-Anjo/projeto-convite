@@ -50,6 +50,11 @@
 body {
     overflow: hidden;
     background-color:black;
+    font: var(--);
+}
+
+main {
+    color: var(--text-body);
 }
 
 

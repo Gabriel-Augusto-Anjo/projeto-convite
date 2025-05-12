@@ -1,0 +1,20 @@
+@import url(fields/index.css);
+
+form {
+    margin-top: 4rem;
+}
+
+fieldset {
+    border: none;
+    display: grid;
+    gap: 2.4rem;
+    grid-auto-flow: row;
+    
+}
+
+legend {
+    margin-bottom: 4rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}

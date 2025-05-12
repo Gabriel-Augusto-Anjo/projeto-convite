@@ -5,10 +5,12 @@
 
 .hd-md {
     font: var(--hd-md);
+    color: var(--text-heading);
 }
 
 .hd-sm {
     font: var(--hd-sm);
+    color: var(--text-heading);
 }
 
 .bd-md {
@@ -22,4 +24,20 @@
 
 .bd-xs {
     font: var(--bd-xs);
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.gap-16 {
+    gap: 1.6rem;
 }

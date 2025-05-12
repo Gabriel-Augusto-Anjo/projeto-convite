@@ -47,3 +47,18 @@ aside {
         }
     }
 }
+
+main {
+    justify-content: center;
+    overflow: auto;
+    padding: 3rem;
+    position: relative;
+    background-color: var(--shape-body);
+    max-width: 82rem;
+
+    .main-container {
+        justify-items: flex-start;
+        padding-inline: 3rem;
+        text-align: justify;
+    }
+}
