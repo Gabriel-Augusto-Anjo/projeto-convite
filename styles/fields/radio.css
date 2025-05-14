@@ -52,7 +52,7 @@ label + .radio-wrapper {
     input[type="text"] {
         &:has(:invalid) {
             color: var(--red);
-            border: 1ps solid var(--red);
+            border: 1px solid var(--red);
         }
     }
 }
