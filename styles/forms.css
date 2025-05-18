@@ -18,3 +18,18 @@ legend {
     gap: 2rem;
     align-items: center;
 }
+
+#contato {
+     margin-top: 3rem;
+     position: relative;
+
+     & .error {
+        opacity: 0;
+     }
+
+     .gap-16 {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: repeat(2, 1fr);
+     }
+}

@@ -104,6 +104,7 @@
                         <label for="locale">Local</label>
                         <input type="text" name="locale" id="locale" placeholder="Link ou endereço">
                     </div>
+
                     </div>
 
                     <div class="textarea-wrapper">
@@ -259,6 +260,72 @@
                    </div>
                 </fieldset>
 
+                <fieldset id="contato">
+                    <legend>
+                        <img src="assets/icons/contats.svg" alt="icone de contatos">
+                        <h3 class="hd-sm">Dados para contato</h3>
+                    </legend>
+
+                    <div class="input-wrapper">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" placeholder="Nome completo">
+                        <div class="error">
+                        <img src="assets/icons/alert.svg" alt="icone de alerta vermelho">
+                        <span>Error message</span>
+                       </div>
+                    </div>
+
+                    <div class="flex gap-16">
+                        <div class="input-wrapper flex-2">
+                            <label for="e-mail">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="exemplo@email.com">
+                        </div>
+
+                        <div class="input-wrapper flex-1">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" name="telefone" id="telefone" placeholder="(99) 99999-9999">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="terms-wrapper input-wrapper">
+                    <div class="termos checkbox-wrapper">
+                        <div class="checkbox-image"></div>
+                        <input type="checkbox" name="terms" id="terms">
+
+                        <label for="terms">
+                            Li e concordo com os <strong>Termos e Condições</strong> e 
+                            com a <strong>Política de Privacidade</strong>
+                        </label>
+                    </div>
+
+                    <div class="checkbox-wrapper">
+                        <div class="checkbox-image"></div>
+                        <input type="checkbox" name="receber-email" id="receber-email">
+
+                        <label for="receber-email">
+                            Aceito receber atualizações e promoções por e-mail
+                        </label>
+                    </div>
+
+                    <div class="checkbox-wrapper">
+                        <div class="checkbox-image"></div>
+                        <input type="checkbox" name="receber-sms" id="receber-sms">
+
+                        <label for="receber-sms">
+                            Aceito receber atualizações e promoções por SMS
+                        </label>
+                    </div>
+                </div>
+
+                <div class="actions-wrapper">
+                     <button type="button">
+                         <div>
+                            <img src="assets/icons/ticket.svg" alt="ticket de bileto">
+                            <p class="bd-md">Gerar convite</p>
+                         </div>
+                     </button>
+                </div>
                </form>
             </div>
         </main>

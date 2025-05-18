@@ -50,6 +50,8 @@
 body {
     overflow: hidden;
     background-color:black;
+    min-width: 122rem;
+     object-fit: cover;
 }
 
 main {

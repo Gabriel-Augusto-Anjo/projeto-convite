@@ -1,0 +1,25 @@
+.actions-wrapper {
+    display: grid;
+    justify-self: end;
+    position: relative;
+    width: 17.7rem;
+    height: 4.8rem;
+    background-color: var(--brand-light);
+    border-radius: 1rem;
+
+    button {
+        display: flex;
+        all: unset;
+        position: absolute;
+        cursor: pointer;
+        inset: 0;
+
+        div {
+            display: flex;
+            text-align: center;
+            margin-inline: 1rem;
+            gap: 1.5rem;
+        }
+    }
+}
+
