@@ -77,12 +77,14 @@ main {
 
         .button-colors {
             position: relative;
-            input,
-            input:has(:checked)
-            input:hover {
-                display: none;
+
+            input {
                 position: absolute;
                 inset: 0;
+                opacity: 0;
+                all: unset;
+                cursor: pointer;
+                border-radius: 50%;
             }
 
             span {
@@ -92,17 +94,14 @@ main {
                 outline: 7px solid var(--shape-button);
                 border-radius: 50%;
                 position: relative;
-                cursor: pointer;
             }
 
             :hover {
-                    outline: 7px solid var(--shape-hover);
+                 outline: 7px solid var(--shape-hover);
             }
 
-            :checked {
-                span {
-                    outline: 50px solid blue;
-                }
+            &:has(:checked) {
+                    outline: 2px solid red;
             }
         }
     }
@@ -112,7 +111,7 @@ main {
         grid-auto-rows: column;
         grid-template-columns: repeat(4, 13.4rem);
         gap: 0.8rem;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         text-align: center;
 
         h5 {
@@ -138,57 +137,61 @@ main {
                 cursor: pointer;
             }
 
-             &:has(:checked) div {
-                    outline: 1px solid var(--brand-light);
+             &:has(:checked) {
+                    border: 1px solid var(--brand-light);
             } 
         }
     }
 
-    .estilo {
-        position: relative;
-        & input {
-            all: unset;
-            cursor: pointer;
-            position: absolute;
-            inset: 0;
-        }
-        .caixa {
-            background-color: var(--input-base);
-            border: 1px solid var(--input-stroke);
-            width: 6.4rem;
-            height: 3.2rem;
-            border-radius: 1rem;
-            position: relative;
-            gap: 1.5rem;
+    .switch-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
 
-            & input {
-               position: absolute;
-               height: 100%;
-               width: 100%;
-               inset: 0;
-            }
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 50px;
+      height: 26px;
+    }
 
-            div {
-                display: block;
-                width: 2.4rem;
-                height: 2.4rem;
-                border-radius: 99.9px;
-                background-color: var(--input-stroke);
-                transform: translateY(2px);
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
 
-                &.escuro {
-                    
-                }
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #333;
+      transition: 0.4s;
+      border-radius: 26px;
+    }
 
-                &.claro {
-                     background-color: transparent;
-                }
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 20px;
+      width: 20px;
+      left: 3px;
+      bottom: 3px;
+      background-color: #555;
+      transition: 0.4s;
+      border-radius: 50%;
+    }
 
-                :has(:checked) {
-                    position: absolute;
-                   background-color: aqua;
-                }
-            }
-        }
+    input:checked + .slider {
+      background-color: var(--brand-light);
+    }
+
+    input:checked + .slider:before {
+      transform: translateX(24px);
+      background-color: #fff;
     }
 }

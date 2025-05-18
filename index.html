@@ -177,84 +177,86 @@
 
                     <div class="temas">
                         <div>
-                            <input type="radio" name="aniversario" id="aniversario" value="aniversario">
+                            <input type="radio" name="tema" id="aniversario" value="aniversario">
                             <img src="assets/image/Image1.png" alt="imagem de uma festa de aniversario">
                             <h5 class="bd-sm">Aniversário</h5>
                         </div>
                         <div>
-                            <input type="radio" name="infantil" id="infantil" value="infantil">
+                            <input type="radio" name="tema" id="infantil" value="infantil">
                             <img src="assets/image/Image2.png" alt="imagem de uma festa infantil">
                             <h5 class="bd-sm">Infantil</h5>
                         </div>
                         <div>
-                            <input type="radio" name="formatura" id="formatura" value="formatura">
+                            <input type="radio" name="tema" id="formatura" value="formatura">
                             <img src="assets/image/Image3.png" alt="imagem de uma formatura">
                             <h5 class="bd-sm">Formatura</h5>
                         </div>
                         <div>
-                            <input type="radio" name="casamento" id="casamento" value="casamento">
+                            <input type="radio" name="tema" id="casamento" value="casamento">
                             <img src="assets/image/Image4.png" alt="imagem de duas alianças e casamento">
                             <h5 class="bd-sm">Casamento</h5>
                         </div>
                         <div>
-                            <input type="radio" name="cha de bebe" id="cha de bebe" value="cha de bebe">
+                            <input type="radio" name="tema" id="cha de bebe" value="cha de bebe">
                             <img src="assets/image/Image5.png" alt="um pacote de frauda do cha de bebe">
                             <h5 class="bd-sm">Chá de bebê</h5>
                         </div>
                         <div>
-                            <input type="radio" name="cha de panela" id="cha de panela" value="cha de panela">
+                            <input type="radio" name="tema" id="cha de panela" value="cha de panela">
                             <img src="assets/image/Image6.png" alt="uma cozinha representando o cha de panela">
                             <h5 class="bd-sm">Chá de panela</h5>
                         </div>
                         <div>
-                            <input type="radio" name="carnaval" id="carnaval" value="carnaval">
+                            <input type="radio" name="tema" id="carnaval" value="carnaval">
                             <img src="assets/image/Image7.png" alt="convetes no chão representando o carnaval">
                             <h5 class="bd-sm">Carnaval</h5>
                         </div>
                         <div>
-                            <input type="radio" name="pascoa" id="pascoa" value="pascoa">
+                            <input type="radio" name="tema" id="pascoa" value="pascoa">
                             <img src="assets/image/Image8.png" alt="imagem de ovos de pascoa">
                             <h5 class="bd-sm">Páscoa</h5>
                         </div>
                         <div>
-                            <input type="radio" name="sao joao" id="sao joao" value="sao joao">
+                            <input type="radio" name="tema" id="sao joao" value="sao joao">
                             <img src="assets/image/Image9.png" alt="imagem de bandeirinhas da festa de sao joao">
                             <h5 class="bd-sm">São joão</h5>
                         </div>
                         <div>
-                            <input type="radio" name="halloween" id="halloween" value="halloween">
+                            <input type="radio" name="tema" id="halloween" value="halloween">
                             <img src="assets/image/Image10.png" alt="imagem de aboboras do halloween">
                             <h5 class="bd-sm">Halloween</h5>
                         </div>
                         <div>
-                            <input type="radio" name="natal" id="natal" value="natal">
+                            <input type="radio" name="tema" id="natal" value="natal">
                             <img src="assets/image/Image11.png" alt="imagem de presentes de natal">
                             <h5 class="bd-sm">Natal</h5>
                         </div>
                         <div>
-                            <input type="radio" name="outro" id="outro" value="outro">
+                            <input type="radio" name="tema" id="outro" value="outro">
                             <img src="assets/image/Image12.png" alt="imagem de pessoas em uma roda de amigos">
                             <h5 class="bd-sm">Outro</h5>
                         </div>
                     </div>
 
                     <div class="flex">
-                        <div class="flex-2 estilo">
-                            <label>Estilo</label>
-                            <div class="caixa flex">
-                                <input type="radio" name="claro" id="claro">
-                                <div class="escuro"></div>
-                                <div class="claro"></div>
-                            </div>
+                        <div class="flex-2 switch-container">
+                            <span>Estilo</span>
+                            <label class="switch">
+                                <input type="checkbox" name="tema-toggle" id="tema-toggle">
+                                <span class="slider"></span>
+                            </label>
+                            <span>Claro</span>
                         </div>
 
                         <div class="flex-1">
                             <label>Foto de capa</label>
-                            <input type="file" name="" id="">
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64645 1.64645C7.84171 1.45118 8.15829 1.45118 8.35355 1.64645L11.6869 4.97978C11.8821 5.17504 11.8821 5.49162 11.6869 5.68689C11.4916 5.88215 11.175 5.88215 10.9798 5.68689L8.5 3.20711V10C8.5 10.2761 8.27614 10.5 8 10.5C7.72386 10.5 7.5 10.2761 7.5 10V3.20711L5.02022 5.68689C4.82496 5.88215 4.50838 5.88215 4.31311 5.68689C4.11785 5.49162 4.11785 5.17504 4.31311 4.97978L7.64645 1.64645ZM2 9.5C2.27614 9.5 2.5 9.72386 2.5 10V12.6667C2.5 12.8877 2.5878 13.0996 2.74408 13.2559C2.90036 13.4122 3.11232 13.5 3.33333 13.5H12.6667C12.8877 13.5 13.0996 13.4122 13.2559 13.2559C13.4122 13.0996 13.5 12.8877 13.5 12.6667V10C13.5 9.72386 13.7239 9.5 14 9.5C14.2761 9.5 14.5 9.72386 14.5 10V12.6667C14.5 13.1529 14.3068 13.6192 13.963 13.963C13.6192 14.3068 13.1529 14.5 12.6667 14.5H3.33333C2.8471 14.5 2.38079 14.3068 2.03697 13.963C1.69315 13.6192 1.5 13.1529 1.5 12.6667V10C1.5 9.72386 1.72386 9.5 2 9.5Z" fill="#59B2FF"/>
-                            </svg>
-                            <span>Selecionar</span>
+                            <div class="drop-area">
+                                <input type="file" name="file" id="file" required>
+                                <div>
+                                <img src="assets/icons/pack.svg" alt="icone de instalação">
+                                <span class="bd-sm">Selecionar</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                    </div>
