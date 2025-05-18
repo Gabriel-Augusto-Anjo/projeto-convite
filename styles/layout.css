@@ -110,9 +110,85 @@ main {
     .temas {
         display: grid;
         grid-auto-rows: column;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(4, 13.4rem);
         gap: 0.8rem;
         margin-bottom: 1rem;
         text-align: center;
+
+        h5 {
+            color: var(--text-heading);
+            font-weight: 400;
+            margin-top: 0.5rem;
+        }
+
+        div {
+            padding: 0.4rem 0.4rem 0.8rem;
+            height: 10rem;
+            background-color: var(--shape-button);
+            border: 1px solid var(--input-stroke);
+            border-radius: 0.8rem;
+            position: relative;
+
+            & input {
+                all: unset;
+                position: absolute;
+                inset: 0;
+                height: 100%;
+                width: 100%;
+                cursor: pointer;
+            }
+
+             &:has(:checked) div {
+                    outline: 1px solid var(--brand-light);
+            } 
+        }
+    }
+
+    .estilo {
+        position: relative;
+        & input {
+            all: unset;
+            cursor: pointer;
+            position: absolute;
+            inset: 0;
+        }
+        .caixa {
+            background-color: var(--input-base);
+            border: 1px solid var(--input-stroke);
+            width: 6.4rem;
+            height: 3.2rem;
+            border-radius: 1rem;
+            position: relative;
+            gap: 1.5rem;
+
+            & input {
+               position: absolute;
+               height: 100%;
+               width: 100%;
+               inset: 0;
+            }
+
+            div {
+                display: block;
+                width: 2.4rem;
+                height: 2.4rem;
+                border-radius: 99.9px;
+                background-color: var(--input-stroke);
+                transform: translateY(2px);
+
+                &.escuro {
+                    
+                }
+
+                &.claro {
+                     background-color: transparent;
+                }
+
+                :has(:checked) {
+                    position: absolute;
+                   background-color: aqua;
+                }
+            }
+        }
     }
 }
